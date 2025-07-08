@@ -64,51 +64,62 @@ body {
         }
 
         .login-card {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            width: 350px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            background-color: rgba(255, 255, 255, 0.9); /* Lighter background for the card */
+            padding: 40px; /* Increased padding */
+            border-radius: 15px; /* More rounded corners */
+            width: 400px; /* Slightly wider card */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+            color: #333; /* Darker text for better readability */
         }
 
         .login-card h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 28px; /* Larger heading */
+            margin-bottom: 15px; /* Increased margin */
+            color: #1a202c; /* Darker heading color */
+            text-align: center; /* Center align heading */
         }
 
         .login-card p {
-            color: #ccc;
-            margin-bottom: 20px;
+            color: #4a5568; /* Softer paragraph color */
+            margin-bottom: 25px; /* Increased margin */
+            text-align: center; /* Center align paragraph */
         }
 
         .login-card label {
             display: block;
-            margin-bottom: 5px;
-            font-size: 14px;
+            margin-bottom: 8px; /* Increased margin */
+            font-size: 16px; /* Larger font size */
+            color: #2d3748; /* Darker label color */
         }
 
         .login-card input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            background: #333;
-            border: 1px solid #555;
-            border-radius: 5px;
-            color: white;
+            width: calc(100% - 22px); /* Adjusted width to account for padding */
+            padding: 12px; /* Increased padding */
+            margin-bottom: 20px; /* Increased margin */
+            background: #f7fafc; /* Lighter input background */
+            border: 1px solid #cbd5e0; /* Softer border */
+            border-radius: 8px; /* More rounded input fields */
+            color: #2d3748; /* Darker input text color */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
+
+        .login-card input::placeholder {
+            color: #a0aec0; /* Lighter placeholder text */
         }
 
         .login-card button {
             width: 100%;
-            background: #E53E3E;
+            background: #4299e1; /* Changed button color to blue */
             color: white;
-            padding: 10px;
+            padding: 12px; /* Increased padding */
             border: none;
-            border-radius: 5px;
+            border-radius: 8px; /* More rounded button */
             font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s ease; /* Smoother transition */
+            font-size: 16px; /* Larger font size */
         }
 
         .login-card button:hover {
-            background: #C53030;
+            background: #3182ce; /* Darker blue on hover */
         }
